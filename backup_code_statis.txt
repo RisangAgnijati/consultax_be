@@ -1,0 +1,61 @@
+=========== SEMI ORGANIZE =============
+// const dotenv = require("dotenv");
+// const express = require("express");
+// const app = express();
+
+// const chatRoutes = require("./src/routes/chatRoutes");
+
+// app.use(express.json());
+// app.use("/chat", chatRoutes);
+
+// const PORT = process.env.PORT || 9001;
+// app.listen(PORT, () =>
+//   console.log(`✅ Server berjalan di http://localhost:${PORT}`)
+// );
+
+============== NON ORGANIZE ===============
+// const express = require("express");
+// const OpenAI = require("openai");
+// const dotenv = require("dotenv");
+
+// dotenv.config();
+// const app = express();
+// app.use(express.json());
+
+// // Gunakan baseURL OpenRouter
+// const openai = new OpenAI({
+//   apiKey: process.env.OPENROUTER_API_KEY,
+//   baseURL: "https://openrouter.ai/api/v1",
+// });
+
+// // Endpoint chat
+// app.post("/chat", async (req, res) => {
+//   const { userMessage } = req.body;
+
+//   try {
+//     const response = await openai.chat.completions.create({
+//       model: "meta-llama/llama-3-8b-instruct",
+//       messages: [
+//         { role: "system", content: "Kamu adalah asisten pajak." },
+//         { role: "user", content: userMessage },
+//       ],
+//       temperature: 0.7,
+//     });
+
+//     res.json({
+//       reply: response.choices[0].message.content,
+//       model: response.model,
+//       usage: response.usage,
+//     });
+//   } catch (error) {
+//     console.error("Error:", error);
+//     const status = error.status || 500;
+//     res.status(status).json({
+//       error: error.message,
+//       details: error.response?.data || null,
+//     });
+//   }
+// });
+
+// const PORT = process.env.PORT || 9001;
+// app.listen(PORT, () => console.log(`✅ Server berjalan di http://localhost:${PORT}`));
