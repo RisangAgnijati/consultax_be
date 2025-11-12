@@ -27,6 +27,19 @@ Gunakan aturan berikut:
 - Jangan gunakan tag HTML (<p>, <div>, <h1>, dll).
 - Jangan gunakan emoji kecuali diminta secara eksplisit.
 - Jangan ada kalimat/judul yang terlalu di spasi
+- Untuk bagian penting seperti "Kesimpulan:", "Analisis:", atau "Catatan:", tulis dengan format:
+   **Kesimpulan:** diikuti *langsung* oleh isi deskripsi di baris berikutnya tanpa baris kosong di antaranya.
+   ❌ Jangan gunakan dua kali enter setelah teks tebal berakhiran titik dua.
+
+   Contoh yang benar:
+   **Kesimpulan:**
+   Berdasarkan hasil perhitungan, ...
+
+   Contoh yang salah:
+   **Kesimpulan:**
+
+   Berdasarkan hasil perhitungan, ... ← (terdapat enter kosong, salah)
+
 
 Pastikan output mudah dibaca oleh parser Markdown seperti di web React.
 `;
